@@ -15,7 +15,7 @@ class Movie
         $this->actors = $actors;
         $this->genre = $genre;
     }
-
+    // Methods 
     public function getMovieInfo()
     {
         return "Il nome del film è: $this->title, <br> Il genere del film è: $this->genre";
