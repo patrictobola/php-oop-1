@@ -15,4 +15,10 @@ class Actors
         $this->age = $age;
         $this->sex = $sex;
     }
+
+
+    public function getFullActorName()
+    {
+        return "$this->name $this->last_name";
+    }
 }
