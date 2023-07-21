@@ -23,4 +23,5 @@ class Movie
 
 
 $film_1 = new Movie('Borat', 'Sasha Baron Cohen', 'Comic');
-var_dump($film_1);
+$film_2 = new Movie('Oppenheimer', 'Cillia Murphy', 'Thriller');
+var_dump($film_1, $film_2);
