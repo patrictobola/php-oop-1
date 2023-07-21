@@ -15,9 +15,14 @@ class Movie
     }
 
     // method 
-    public function setTitle($text)
+    // public function setTitle($text)
+    // {
+    //     return ucfirst($text);
+    // }
+
+    public function getMovieInfo()
     {
-        return ucfirst($text);
+        return "Il nome del film è: $this->title, <br> Il protagonista è: $this->actors, <br> Il genere del film è: $this->genre";
     }
 }
 
@@ -25,3 +30,5 @@ class Movie
 $film_1 = new Movie('Borat', 'Sasha Baron Cohen', 'Comic');
 $film_2 = new Movie('Oppenheimer', 'Cillia Murphy', 'Thriller');
 var_dump($film_1, $film_2);
+
+echo $film_1->getMovieInfo();
