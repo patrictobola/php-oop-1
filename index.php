@@ -27,9 +27,14 @@ include __DIR__ . '/data/db.php';
         <div>
             <ul>
                 <?php foreach ($films as $film) :
-                    $movie = new Movie($film['name'], $film['actors'], $film['genre']);
+                    $actor = new Actor($film['actors']['name'], $film['actors']['last_name']);
+                    $movie = new Movie($film['name'], $actor, $film['genre']);
                 ?>
-                    <li><?= $movie->getMovieInfo() ?></li>
+                    <li class="mb-5">
+                        Il titolo del film è: <?= $movie->title ?> <br>
+                        L'attore protagonista è: <?= $actor->getFullActorName() ?> <br>
+                        Il genere del film è: <?= $movie->genre ?>
+                    </li>
                 <?php endforeach ?>
 
             </ul>

@@ -9,25 +9,15 @@ class Movie
     public $genre;
 
     // Constructor 
-    public function __construct($title, $actors, $genre)
+    public function __construct($title, Actor $actors, $genre)
     {
         $this->title = $title;
         $this->actors = $actors;
         $this->genre = $genre;
     }
 
-    // method 
-    // public function setTitle($text)
-    // {
-    //     return ucfirst($text);
-    // }
-    public function getMainActor()
-    {
-        return $this->actors[0];
-    }
-
     public function getMovieInfo()
     {
-        return "Il nome del film è: $this->title, <br> Il protagonista è: " . $this->getMainActor() . ", <br> Il genere del film è: $this->genre";
+        return "Il nome del film è: $this->title, <br> Il genere del film è: $this->genre";
     }
 }

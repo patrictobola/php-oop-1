@@ -3,45 +3,40 @@ $films = [
     [
         'name' => 'Borat',
         'actors' => [
-            'Sacha Baron Cohen',
-            'Pamela Anderson',
-            'Maria Bakalova'
+            'name' => 'Sacha Baron',
+            'last_name' => 'Cohen'
         ],
         'genre' => 'Comic'
     ],
     [
         'name' => 'Oppenheimer',
         'actors' => [
-            'Cillian Murphy',
-            'Robert Downey Jr.',
-            'Florence Pugh'
+            'name' => 'Cillian',
+            'last_name' => 'Murphy'
         ],
         'genre' => 'Thriller'
     ],
     [
         'name' => 'Inception',
         'actors' => [
-            'Leonardo di Caprio',
-            'Joseph Gordon-Levitt',
-            'Cillian Murphy'
+            'name' => 'Leonardo',
+            'last_name' => 'di Caprio'
         ],
         'genre' => 'Mystery'
     ],
     [
         'name' => 'Guardians of the Galaxy Vol. 3',
         'actors' => [
-            'Chris Pratt',
-            'Zoe Saldana',
-            'Will Poulter'
+            'name' => 'Chris',
+            'last_name' => 'Pratt'
         ],
         'genre' => 'Action/Sci-fi'
     ],
     [
         'name' => 'Sinister',
         'actors' => [
-            'Ethan Hawke',
-            'James Ransone',
-            'Nicholas King'
+            'name' => 'Ethan',
+            'last_name' => 'Hawke'
         ],
         'genre' => 'Comic'
     ]
