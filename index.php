@@ -13,4 +13,10 @@ class Movie
         $this->actors = $actors;
         $this->genre = $genre;
     }
+
+    // method 
+    public function setTitle($text)
+    {
+        return ucfirst($text);
+    }
 }
