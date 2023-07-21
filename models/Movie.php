@@ -1,4 +1,6 @@
 <?php
+// importo actors 
+include __DIR__ . '/Actors.php';
 class Movie
 {
 
@@ -7,7 +9,7 @@ class Movie
     public $genre;
 
     // Constructor 
-    public function __construct($title, $actors, $genre)
+    public function __construct($title, Actors $actors, $genre)
     {
         $this->title = $title;
         $this->actors = $actors;
