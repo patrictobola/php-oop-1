@@ -14,5 +14,3 @@ $actor_2 = new Actors('Cillian', 'Murphy', 47, 'Male');
 // Films 
 $film_1 = new Movie('Borat', $actor_1, 'Comic');
 $film_2 = new Movie('Oppenheimer', $actor_2, 'Thriller');
-
-var_dump($film_1);
